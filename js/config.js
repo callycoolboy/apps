@@ -13,6 +13,7 @@ $("#carl2").hide( 9000 );
    
 	 }
         window.onload = codeAddress;
+        
 
 
 function validateForm() {
@@ -55,6 +56,23 @@ var dataString = '&name=' + name + '&email=' + email + '&pass=' + pass + '&phone
         return false;
     }
 	else {
+		
+var networkState = navigator.network.connection.type;
+
+    var states = {};
+    states[Connection.UNKNOWN]  = 'Unknown connection';
+    states[Connection.ETHERNET] = 'Ethernet connection';
+    states[Connection.WIFI]     = 'WiFi connection';
+    states[Connection.CELL_2G]  = 'Cell 2G connection';
+    states[Connection.CELL_3G]  = 'Cell 3G connection';
+    states[Connection.CELL_4G]  = 'Cell 4G connection';
+    states[Connection.NONE]     = 'No network connection';
+if (states[networkState] == 'No network connection'){
+	
+    alert('Connection Error!! Ensure that your Mobile Data is turned on and try again.');
+}
+else 	{
+	
 $("#loading").show();
 // AJAX code to submit form.
 $.ajax({
@@ -85,6 +103,7 @@ alert("Something Went wrong");
 }
 });
 }
+}
 return false;
 }
 
@@ -107,6 +126,23 @@ var dataString = '&phone=' + phone + '&pass=' + pass;
         return false;
     }
 	else {
+		
+var networkState = navigator.network.connection.type;
+
+    var states = {};
+    states[Connection.UNKNOWN]  = 'Unknown connection';
+    states[Connection.ETHERNET] = 'Ethernet connection';
+    states[Connection.WIFI]     = 'WiFi connection';
+    states[Connection.CELL_2G]  = 'Cell 2G connection';
+    states[Connection.CELL_3G]  = 'Cell 3G connection';
+    states[Connection.CELL_4G]  = 'Cell 4G connection';
+    states[Connection.NONE]     = 'No network connection';
+if (states[networkState] == 'No network connection'){
+	
+    alert('Connection Error!! Ensure that your Mobile Data is turned on and try again.');
+}
+else 	{
+	
 $("#loading2").show();
 // AJAX code to submit form.
 $.ajax({
@@ -136,6 +172,7 @@ document.getElementById("pass1").value = "";
 }
 });
 }
+	}
 return false;
 }
 
@@ -152,6 +189,28 @@ var dataString = '&phone=' + phone;
         return false;
     }
 	else {
+var networkState = navigator.network.connection.type;
+
+    var states = {};
+    states[Connection.UNKNOWN]  = 'Unknown connection';
+    states[Connection.ETHERNET] = 'Ethernet connection';
+    states[Connection.WIFI]     = 'WiFi connection';
+    states[Connection.CELL_2G]  = 'Cell 2G connection';
+    states[Connection.CELL_3G]  = 'Cell 3G connection';
+    states[Connection.CELL_4G]  = 'Cell 4G connection';
+    states[Connection.NONE]     = 'No network connection';
+if (states[networkState] == 'No network connection'){
+	
+    alert('Connection Error!! Ensure that your Mobile Data is turned on and try again.');
+}
+else 	{
+		
+		
+		
+		
+		
+		
+		
 $("#loading3").show();
 // AJAX code to submit form.
 $.ajax({
@@ -168,22 +227,51 @@ window.location = "#page4";
 $( '#form3' ).each(function(){
     this.reset();
 });
+
 }
 else if(data=="failed")
 {
 $("#loading3").hide();
 alert("Invalid Phone Number. Please Try again!!!");
 }
+} 
 
-}
 });
+}
 }
 return false;
 }
+
 
 function logout() {
 $('#usern').value = "";
 alert("You Have sucessfully Logged out!!!");
 window.location = "#page";
 return true;
+}
+
+function signin() {
+var networkState = navigator.network.connection.type;
+
+    var states = {};
+    states[Connection.UNKNOWN]  = 'Unknown connection';
+    states[Connection.ETHERNET] = 'Ethernet connection';
+    states[Connection.WIFI]     = 'WiFi connection';
+    states[Connection.CELL_2G]  = 'Cell 2G connection';
+    states[Connection.CELL_3G]  = 'Cell 3G connection';
+    states[Connection.CELL_4G]  = 'Cell 4G connection';
+    states[Connection.NONE]     = 'No network connection';
+if (states[networkState] == 'No network connection'){
+	
+    alert('You are currentlly OFFLINE!! Ensure that your Network is up in order to access this page.');
+}
+else 	{
+    alert('Current Network Status: ' + states[networkState] + ' Click OK to Continue');
+window.location = "#page4";
+}
+return true;
+}
+
+function closeMeNow() {
+    navigator.app.exitApp();
 }
