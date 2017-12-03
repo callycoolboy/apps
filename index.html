@@ -55,24 +55,24 @@
 	<div data-role="header" class="head">
     <span class="user" id="user" name="user"></span>
 	</div>
-    <div data-role="header" class="line"><a href="#" data-role="button" data-icon="home" data-iconpos="notext">Button</a>
+    <div data-role="header" class="line"><a href="#" onclick="closeMeNow()" data-role="button" data-icon="home" data-iconpos="notext">Button</a>
     
     </div>
 	<div data-role="content">
 	  <ul data-role="listview" class="mainmenu">
-	    <li><a href="#page2"><img src="about-us.png"/>
+	    <li><a href="#page2"><img src="img/about-us.png"/>
 	      <h3>About Us</h3>
 	      <p>About Carl Automobiles Lookup</p>
 	      </a></li>
-	    <li><a href="#page3"><img src="mechanic.jpg"/>
+	    <li><a href="#page3"><img src="img/mechanic.jpg"/>
 	      <h3>Nearby Mechanic</h3>
 	      <p>Search For mechanic Around You</p>
 	      </a></li>
-	    <li><a href="#page4"><img src="login.png"/>
+	    <li><a onclick="signin()"><img src="img/login.png"/>
 	      <h3>Login/Signup</h3>
 	      <p>Login or Signup as a Mechanic.</p>
 	      </a></li>
-	    <li><a href="#page5"><img src="contactus.jpg"/>
+	    <li><a href="#page5"><img src="img/contactus.jpg"/>
 	      <h3>Contact</h3>
 	      <p>Contact Us</p>
 	      </a></li>
@@ -80,7 +80,7 @@
 			
 	</div>
 	<div data-role="footer" class="footer">
-		<h4>c2017</br>Developed By:</br>CALLYs CONCEPT</h4>
+		<h4>&copy; 2017</br>Developed By:</br>CALLYs CONCEPT</h4>
 	</div>
 </div>
 
@@ -89,14 +89,49 @@
     <span class="user" id="user" name="user"></span>
 	</div>
     <div data-role="header" class="line"><a href="#page" data-role="button" data-icon="back">Back</a><h3>About Us</h3></div>
-	<div data-role="content" class="bodycopy">	
-		<h2>Content</h2>   
-		
-		
+	<div data-role="content" class="fieldcontain bodycopy">
+</br>	
+		<h3 style="text-align:left">About CALLYs CONCEPT</h3>   
+	<p>Cally’s ICT Center is a Branch of Cally’s Concept that deals with internet related services. It is Nigeria’s most innovative branding, advertising and internet marketing company involved in graphic design, branding, printing, website design, advertising, and digital marketing. Our other areas of specialty include, content development, search engine optimization, social media marketing and other internet related promotion services.
+
+</p>With several years in web development, we have developed and established lasting solutions for our numerous satisfied clients all over the world. Our success story is built on our sincerity and commitment to hard work; with passion for creativity and excellence.
+
+</p>Our web design and development is done according to the latest Web 2.0 standards and demands; both in creativity and content development. We incorporate our clients’ needs, and focus on the end-users’ experience and objectives</p>	
+</br></br>	
+<h3 style="text-align:left">Our Services</h3>
+
+<p>Cally’s ICT Dept, is a tech-savvy, futuristic web and mobile apps development company, offering a wide range of web based services to its clientele across the globe. We combine our core business experience, technical expertise, trusted knowledge of latest industry trends, and quality-driven delivery model to offer progressive, end-to-end web and mobile solutions.
+</br>We have a decade of experience in coding and developing a wide range of websites with premium quality and professional standards. We ensure to use modern techniques and domain expertise to deliver quality web solutions.</p>
+
+<b>Web Design & Development:</b>
+We give state-of-the-art Web 2.0/3.0 designs, enabling our clients to showcase their products and services to the world. With our internet presence web design service, you’re assured of a global coverage. Our web design services include:
+• Static websites</br>
+• Dynamic websites</br>
+• Ecommerce websites</br>
+• CMS websites</br>
+• Logo design</br>
+</p>
+<b>Training:</b>
+</br>With our superior and strategic training tactics in web design, we train individuals with little or no foundation in ICT to become professionals in less than four weeks. We also cover IT related courses like Project Management (PMP) and ITIL.
+</br>• Computer Training (Indoor and Outdoor)
+</br>• Web Design Training
+
+</p><b>Domain Registration / Web Hosting:</b>
+</br>Domain Name Registration is a lot easier with us; and our Web hosting service is cheaper and more reliable. We host on both Linux and Windows platform for clients within and outside Nigeria.
+</br></p>
+<b>Printing and Brand Promotions:</b>
+</br>We make the best customized designs for your brand:
+</br>• Logo design
+</br>• Graphic design
+</br>• UX Design, UI Design
+</br>• Flyer design
+</br>• Icon design
+</br>• Corporate Identity Design
+</br>• Brochure design</br></br></br>	
 	</div>
     
 	<div data-role="footer" class="footer">
-		<h4>c2017</br>Developed By:</br>CALLYs CONCEPT</h4>
+		<h4>&copy; 2017</br>Developed By:</br>CALLYs CONCEPT</h4>
 	</div>
 	  
 		
@@ -117,7 +152,7 @@
 		Content		
 	</div></ul>
 	<div data-role="footer" class="footer">
-		<h4>c2017</br>Developed By:</br>CALLYs CONCEPT</h4>
+		<h4>&copy; 2017</br>Developed By:</br>CALLYs CONCEPT</h4>
 	</div>
 </div>
 
@@ -144,7 +179,7 @@
      <img src="img/preloader.gif" id="ajaxSpinnerImage" title="working..." />
 </div>
 	<div data-role="footer" class="footer">
-		<h4>c2017</br>Developed By:</br>CALLYs CONCEPT</h4> 
+		<h4>&copy; 2017</br>Developed By:</br>CALLYs CONCEPT</h4> 
 	</div>
 </div>
 <div data-role="page" id="page5">
@@ -152,10 +187,25 @@
  <span class="user" id="user" name="user"></span>
 	</div>
      <div data-role="header" class="line"><a href="#page" data-role="button" data-icon="back">Back</a><h3>Contact Us</h3></div>
-  <div data-role="content" class="bodycopy">Content
-  <pre id="output"></pre></div>
+  <div data-role="content" class="bodycopy">
+  </br>
+  </br>
+<h3><b>Address:</b> plot 1 NITEL Staff Quarters opposite NCC cappa Oshodi Lagos State Nigeria.</p>
+
+<b>Phone no:</b><a href='https://api.whatsapp.com/send?phone=2347030381368'>+234(703)038-1368</a></p>
+
+<b>Email:</b><a href='mailto:callysconcept@gmail.com'>callysconcept@gmail.com</a></p>
+
+<b>FB Page:</b><a href='http://facebook.com/callysconcept.ng'>http://facebook.com/callysconcept.ng</a></p>
+
+<b>Twitter:</b> @callysconcept</p>
+
+<b>website:</b><a href='https://callysconcept.com.ng'>https://callysconcept.com.ng</a></p></br></br></h3>
+  
+  
+</div>
   <div data-role="footer" class="footer">
-		<h4>c2017</br>Developed By:</br>CALLYs CONCEPT</h4>
+		<h4>&copy; 2017</br>Developed By:</br>CALLYs CONCEPT</h4>
 	</div>
     </div>
   
@@ -177,7 +227,7 @@
      <img src="img/preloader.gif" id="ajaxSpinnerImage" title="working..." />
 </div>
   <div data-role="footer" class="footer">
-		<h4>c2017</br>Developed By:</br>CALLYs CONCEPT</h4>
+		<h4>&copy; 2017</br>Developed By:</br>CALLYs CONCEPT</h4>
 	</div>
     </div>
   
@@ -211,7 +261,7 @@
      <img src="img/preloader.gif" id="ajaxSpinnerImage" title="working..." />
 </div>
   <div data-role="footer" class="footer">
-		<h4>c2017</br>Developed By:</br>CALLYs CONCEPT</h4>
+		<h4>&copy; 2017</br>Developed By:</br>CALLYs CONCEPT</h4>
 	</div>
 </div>
 
@@ -230,11 +280,11 @@
     </div>
 	<div data-role="content">
 	  <ul data-role="listview" class="mainmenu">
-	    <li><a href="#"><img src="mechanic.jpg"/>
+	    <li><a href="#"><img src="img/mechanic.jpg"/>
 	      <h3>Post Services</h3>
 	      <p>Place an AD so that customers can see you.</p>
 	      </a></li>
-	    <li><a href="#page3b"><img src="contactus.jpg"/>
+	    <li><a href="#page3b"><img src="img/contactus.jpg"/>
 	      <h3>Contact</h3>
 	      <p>Contact Us</p>
 	      </a></li>
@@ -242,7 +292,7 @@
 			
 	</div>
 	<div data-role="footer" class="footer">
-		<h4>c2017</br>Developed By:</br>CALLYs CONCEPT</h4>
+		<h4>&copy; 2017</br>Developed By:</br>CALLYs CONCEPT</h4>
 	</div>
 </div>
 
@@ -255,11 +305,42 @@
   <div data-role="content" class="bodycopy">Contentss
   <pre id="output"></pre></div>
   <div data-role="footer" class="footer">
-		<h4>c2017</br>Developed By:</br>CALLYs CONCEPT</h4>
+		<h4>&copy; 2017</br>Developed By:</br>CALLYs CONCEPT</h4>
 	</div>
     </div>
+<script type="text/javascript" charset="utf-8">
 
+  // Wait for device API libraries to load
+  //
+  document.addEventListener("deviceready", onDeviceReady, false);
+
+  // device APIs are available
+  function onDeviceReady() {
+    navigator.geolocation.getCurrentPosition(onSuccess, onError);
+  }
+
+  // onSuccess Geolocation
+  function onSuccess(position) {
+    var element = document.getElementById('geolocation');
+    element.innerHTML = 'Latitude: ' + position.coords.latitude              + '<br />' +
+            'Longitude: '          + position.coords.longitude             + '<br />' +
+            'Altitude: '           + position.coords.altitude              + '<br />' +
+            'Accuracy: '           + position.coords.accuracy              + '<br />' +
+            'Altitude Accuracy: '  + position.coords.altitudeAccuracy      + '<br />' +
+            'Heading: '            + position.coords.heading               + '<br />' +
+            'Speed: '              + position.coords.speed                 + '<br />' +
+            'Timestamp: '          + position.timestamp                    + '<br />';
+  
+}
+  // onError Callback receives a PositionError object
+  function onError(error) {
+    alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
+  }
+
+</script>
    
+   
+
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
